@@ -1,0 +1,154 @@
+
+<style>
+    html body {
+      background-color: rgb(196, 232, 214);
+    }
+   
+    label {
+        display: block;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .button-container{
+    text-align: center; 
+    height: 100vh; 
+}
+button {
+    display: block; 
+    margin: 0 auto;
+
+}
+
+</style>
+  
+
+  <br /><br />
+  <h2 style="text-align: center; margin: 0px; color: black">
+    <b>Discover the ideal crop for your farm</b>
+  </h2>
+  <br />
+  
+  <div
+    style="
+      width: 350px;
+      height: 40rem;
+      margin: 0px auto;
+      color: black;
+      border-radius: 25px;
+      padding: 10px 10px;
+    "
+  >
+    <form method="POST" action="{{ url_for('crop_prediction') }}">
+        
+      <div style="padding: 10px 10px;">
+        <label for="Nitrogen" style="font-size: 17px"><b>Nitrogen</b></label>
+        <input
+          type="number"
+          class="form-control"
+          id="Nitrogen"
+          name="nitrogen"
+          placeholder="Enter value-10,20,30..."
+          style="font-weight: bold"
+          required
+        />
+      </div>
+      <div style="padding: 10px 10px;">
+        <label for="Phosphorous" style="font-size: 17px"
+          ><b>Phosphorous</b></label
+        >
+        <input
+          type="number"
+       
+          id="Phosphorous"
+          name="phosphorous"
+          placeholder="Enter value-10,20,30..."
+          style="font-weight: bold"
+          required
+        />
+      </div>
+  
+      <div style="padding: 10px 10px;">
+        <label for="Pottasium" style="font-size: 17px"><b>Pottasium</b></label>
+        <input
+          type="number"
+          class="form-control"
+          id="Pottasium"
+          name="pottasium"
+          placeholder="Enter value-10,20,30..."
+          style="font-weight: bold"
+          required
+        />
+      </div>
+
+      <div style="padding: 10px 10px;">
+        <label for="Temperature" style="font-size: 17px"><b>Temperature</b></label>
+        <input
+          type="number"
+          id="Temperature"
+          name="temperature"
+          placeholder="Enter value-10,15,20,25...."
+          style="font-weight: bold"
+          required
+        />
+      </div>
+
+      <div style="padding: 10px 10px;">
+        <label for="Humidity" style="font-size: 17px"><b>Humidity</b></label>
+        <input
+          type="number"
+          id="Humidity"
+          name="humidity"
+          placeholder="Enter value-1,2,3,...."
+          style="font-weight: bold"
+          required
+        />
+      </div>
+
+
+      <div style="padding: 10px 10px;">
+        <label for="Pottasium" style="font-size: 17px"><b>PH</b></label>
+        <input
+          type="number"
+          id="PH"
+          name="ph"
+          placeholder="Enter value-1,2,3,...."
+          style="font-weight: bold"
+          required
+        />
+      </div>
+    
+  
+      <div style="padding: 10px 10px;" >
+        <button
+          type="submit"
+          
+          style="
+            color: black;
+            font-weight: bold;
+            width: 130px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 18px;
+          "
+        >
+          Predict
+        </button>
+      </div>
+    </form>
+  </div>

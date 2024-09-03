@@ -1,0 +1,173 @@
+/* Project Intro Section */
+a{
+    text-decoration: none;
+}
+
+.project-intro {
+    text-align: center;
+    padding: 4em 2em;
+    background-color: #1A936F; /* Dark green */
+    color: #fff;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.project-intro h1 {
+    margin-bottom: 0.5em;
+}
+
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light greenish background */
+}
+
+header {
+    background-color: #3e8e41; /* Dark green */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.models {
+    padding: 2em;
+}
+
+.model-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.model {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 1em;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.model h3 {
+    color: #3e8e41; /* Dark green */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.model-details {
+    min-height: 100vh;
+    padding: 2em;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    align-content: end;
+}
+
+.links {
+    padding: 2em;
+}
+
+.resource {
+    margin-bottom: 10px;
+}
+
+.resource a {
+    color: #3e8e41; /* Dark green */
+}
+
+footer {
+    background-color: #3e8e41; /* Dark green */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* Specific Section Styling */
+#model1-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./crop_field.jpeg")
+}
+
+#model2-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./uploads_2024_06_28_681236c5d4593038f71026c826d42b401c4d18c0_Balanced-crop-nutrition.png");
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    height:30vh;
+    margin-bottom: 6rem;
+}
+
+.text-content{
+    text-align: center;
+    width: 60%;
+}
+
+.action-button{
+    background-color:#3e8e41;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
